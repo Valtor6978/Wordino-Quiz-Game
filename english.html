@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wordino|English</title>
+    <!-- css -->
+    <link rel="stylesheet" href="./assets/css/normalize.css" />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <link rel="stylesheet" href="./assets/css/english.css" />
+    <!-- google fonts english -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font awsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- js files -->
+    <script src="./assets/js/question-list.js" defer></script>
+    <script src="./assets/js/english-script.js" defer></script>
+    <script src="./assets/js/jquery.js"></script>
+  </head>
+  <body>
+    <!-- background animation start -->
+    <div class="area" >
+      <ul class="circles">
+        <li>V</li>
+        <li>A</li>
+        <li>L</li>
+        <li>T</li>
+        <li>O</li>
+        <li>R</li>
+        <li>!</li>
+        </ul>
+    </div >
+    <!-- background animation end -->
+    <!-- header  -->
+    <header class="header-container">
+      <div class="hamburger-button">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+      <div class="brand-name">
+        <img src="./assets/images/logo-no-bg.png" alt=" wordino logo" />
+      </div>
+      <div class="avatar">
+        <img style="border-radius: 50%;" class="avatar-img" src="./assets/images/avatar1.jpg" alt="owl avatar" />
+      </div>
+      <!-- player profile -->
+      <div class="gamer-info">
+        <img style="border-radius: 50%;" class="avatar-img" src="./assets/images/avatar1.jpg" alt="owl avatar" />
+        <p class="gi-id"><span>Valtor6978</span></p>
+        <p class="gi-high-score">Highest score: <span id="gi-high-score">0</span></p>
+        <div class="close-btn">
+          <i id="close-icon" class="fa-solid fa-caret-right"></i>
+        </div>
+      </div>
+    </header>
+    <!-- end of header  -->
+    <div class="fade-bg">
+
+    </div>
+     <!-- hamburger side menu  -->
+    <div class="hamburger-menu">
+      <i class="fa-solid fa-xmark"></i>
+      <div class="menu-list">
+        <ul>
+          <li><a href="./index.html">Main menu</a></li>
+          <li><a href="./persian.html">Change language</a></li>
+          <li><a href="https://github.com/Valtor6978" target="_blank">About us</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- question and answer  box  -->
+    <div class="question-box ">
+      <p class="question"></p>
+    </div>
+    <div class="answer-box">
+      <ul class="answer-list"></ul>
+    </div>
+
+    <!-- info box  -->
+     <div class="info-box">
+       <div class="score-count info-box-col">
+         <p> score: <span id="score-counter"></span></p>
+        </div>
+        <div class="guess-count info-box-col">
+        <p class="wrong-guesses">0/5</p>
+        </div>
+    </div>
+
+<!-- dynamic keyboard -->
+    <div class="keyboard-container"></div>
+
+    <!-- game over popup -->
+    <div class="popup-container">
+      <div class="popup-box">
+        <p class="game-over" >Game Over</p>
+        <p class="correct-word">The correct word was: <p id="correct-word"></p></p>
+        <p class="highest-score" > Your highest score: <br> <span id="high-score"></span></p>
+        <div class="buttons">
+          <button id="popup-button" class="btn">
+            <span></span>
+            <p
+              data-start="Try again!"
+              data-text="lets go!"
+              data-title="Try again"
+            ></p>
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

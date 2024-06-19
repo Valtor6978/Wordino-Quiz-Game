@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wordino|Main Menu</title>
+    <!-- css -->
+    <link rel="stylesheet" href="./assets/css/normalize.css" />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <!-- google fonts english -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="./assets/js/jquery.js"></script>
+    <script src="./assets/js/main.js" defer></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="logo-container">
+        <img src="./assets/images/logo-no-bg.png" alt="" />
+      </div>
+      <div class="animation-container">
+        <svg
+          width="530.161"
+          height="98.642"
+          viewBox="0 0 542.161 100.642"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+        </svg>
+      </div>
+
+      <div class="article-container">
+        <article>
+          <h1 class="header">Test your knowledge</h1>
+        </article>
+        <p class="ask-lang">Select your language</p>
+        <div class="lang-selection-container">
+          <a href="./english.html">
+            <div class="buttons">
+              <button class="btn">
+                <p
+                  data-start="good luck"
+                  data-text="good luck!"
+                  data-title="English"
+                ></p>
+              </button>
+            </div>
+          </a>
+          <a href="./persian.html">
+            <div class="buttons">
+              <button class="btn">
+                <p
+                  data-start="P &nbsp e &nbsp r &nbsp s &nbsp i &nbsp a &nbsp n &nbsp!"
+                  data-text="have fun!"
+                  data-title="persian"
+                ></p>
+              </button>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="loader-container">
+      <div
+        style="
+          --size: 64px;
+          --dot-size: 6px;
+          --dot-count: 6;
+          --color: #fff;
+          --speed: 1s;
+          --spread: 60deg;
+        "
+        class="dots"
+      >
+        <div style="--i: 0" class="dot"></div>
+        <div style="--i: 1" class="dot"></div>
+        <div style="--i: 2" class="dot"></div>
+        <div style="--i: 3" class="dot"></div>
+        <div style="--i: 4" class="dot"></div>
+        <div style="--i: 5" class="dot"></div>
+      </div>
+    </div>
+  </body>
+</html>
